@@ -2,11 +2,11 @@
 
 /**
  * print_char - print character to stdout
- *@list: list of arguments
+ *@args: list of arguments
  *
  * Return: @print_char
  */
-int print_char(va_list list)
+int print_char(va_list args)
 {
 	_putchar(va_arg(args, int));
 	return (1);
@@ -14,11 +14,11 @@ int print_char(va_list list)
 
 /**
  * print_str - print string to stdout
- * @list: list of arguments
+ * @args: list of arguments
  *
  * Return: @print_str
  */
-int print_str(va_list list)
+int print_str(va_list args) 
 {
 	int i;
 	char *str;
