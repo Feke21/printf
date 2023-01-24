@@ -7,7 +7,7 @@
  */
 int print_str_unprintable(va_list ar_list)
 {
-	char *argument = va_arg(ap, char *);
+	char *argument = va_arg(ar_list, char *);
 	int sum = 0;
 
 	if (!argument)
