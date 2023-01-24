@@ -24,7 +24,7 @@ int print_char(va_list ar_list);
 int print_str(va_list ar_list);
 int (*get_func(char s))(va_list ar_list);
 int print_num_d(va_list ar_list);
-int print_num_i(va_list ar_numlist);
+int print_num_i(va_list ar_list);
 int print_binary(va_list b_list);
 int print_unsigned_int(va_list ar_list);
 int print_octal(va_list ar_list);

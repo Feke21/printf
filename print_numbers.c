@@ -13,7 +13,7 @@ int print_num_d(va_list ar_list)
 
 	amount = 0;
 
-	num = va_arg(ar_list, int);
+	num = va_arg(va_list, int);
 
 	if (num < 0)
 	{
@@ -43,7 +43,7 @@ int print_num_d(va_list ar_list)
  * @ar_numlist: Store numbers
  * Return: amount of printed numbers
  */
-int print_num_i(va_list ar_numlist)
+int print_num_i(va_list ar_list)
 {
 		return (print_num_d(ar_list));
 }
