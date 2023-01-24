@@ -15,7 +15,6 @@ int _printf(const char *format, ...)
 	va_list args;
 	va_start(args, format);
 
-	char a = 'a', A = 'A';
 	int length = 0;
 
 	while (*format != '\0')
@@ -50,22 +49,22 @@ int _printf(const char *format, ...)
 					print_octal(va_arg(args, unsigned int));
 					break;
 				case 'x':
-					print_lower_hexa(va_arg(args, unsigned int), a);
+					print_lower_hexa(va_arg(args, unsigned int));
 					break;
 				case 'X':
-					print_upper_hexa(va_arg(args, unsigned int), A);
+					print_upper_hexa(va_arg(args, unsigned int));
 					break;
 				case 'p':
 					print_pointer(va_arg(args, void *));
 					break;
 				case 'r':
-					print_reverse(va_arg(args, *char));
+					print_reverse(va_arg(args, int *));
 					break;
 				case 'R':
-					print_rot13(va_arg(args, *char));
+					print_rot13(va_arg(args, int *));
 					break;
 				case 'S':
-					print_str_unprintable(va_arg(args, *char));
+					print_str_unprintable(va_arg(args, int *));
 					break;
 				default:
 					_putchar('%');
