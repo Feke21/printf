@@ -41,5 +41,6 @@ int print_rot13(va_list ar_list);
 int print_str_unprintable(va_list ar_list);
 char *convert_rot13(char *str);
 int _strlen_recursion(char *s);
+int convert_alpha_numeric(int nb, int upper);
 
 #endif
