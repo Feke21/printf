@@ -2,28 +2,34 @@
 
 /**
  * print_char - print character to stdout
- *@args: list of arguments
+ *@ar_list: list of arguments
  *
  * Return: @print_char
  */
-int print_char(va_list args)
+int print_char(va_list ar_list)
 {
-	_putchar(va_arg(args, int));
-	return (1);
+	int c = va_arg(ar_list, int);
+
+	return (_putchar(c));
 }
 
 /**
  * print_str - print string to stdout
- * @args: list of arguments
+ * @ar_list: list of arguments
  *
  * Return: @print_str
  */
-int print_str(va_list args) 
+int print_str(va_list ar_list)
 {
-	int i;
+	int i, count = 0;
 	char *str;
 
-	for (i = 0; str[i] != '\0'; i++)
-		_putchar(str[i]);
-	return (i);
+	str = va_arg(ar_list, char *);
+	if (str == NULL)
+		str = "(null)";
+
+	for (i = 0; str[i]; i++)
+		count += _putchar(str[i]);
+
+	return (count);
 }
