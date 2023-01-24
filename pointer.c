@@ -13,7 +13,7 @@ int _puts(char *str, int ascii)
 {
 	char *s;
 	int i = 0, sum = 0;
-	
+
 	while (str[i])
 	{
 		if (((str[i] >= 0 && str[i] < 32) || str[i] >= 127) && ascii)
@@ -81,7 +81,7 @@ char *convert_base_pointer(unsigned long p)
 {
 	unsigned long adress;
 	char *str;
-	
+
 	adress = p;
 	if (adress == 0)
 		return ("0");
@@ -90,12 +90,12 @@ char *convert_base_pointer(unsigned long p)
 }
 
 /**
- * print_ptr - print pointer
- * @ar_list - argument list
+ * print_pointer - print pointer
+ * @ar_list: argument list
  *
  * Return: pointer
  */
-int print_ptr(va_list ar_list)
+int print_pointer(va_list ar_list)
 {
 	char *str;
 	int sum = 0;
