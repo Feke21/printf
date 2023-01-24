@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 					print_str(va_arg(args, char*));
 					break;
 				case '%':
-					print_percent(va_arg(args, char __attribute__(unused)));
+					print_percent(va_arg(args, int __attribute__(unused)));
 					break;
 				case 'd':
 					print_number(va_arg(args, int));
