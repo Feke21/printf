@@ -2,7 +2,7 @@
 
 /**
  * print_char - print character to stdout
- *@ar_list: list of arguments
+ * @ar_list: list of arguments
  *
  * Return: @print_char
  */
