@@ -22,6 +22,7 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list ar_list);
 int print_str(va_list ar_list);
+int print_percent(__attribute__((unused))va_list ar_list);
 int (*get_func(char s))(va_list ar_list);
 int print_num_d(va_list ar_list);
 int print_num_i(va_list ar_list);
