@@ -13,7 +13,7 @@ int print_num_d(va_list ar_list)
 
 	amount = 0;
 
-	num = va_arg(va_list, int);
+	num = va_arg(ar_list, int);
 
 	if (num < 0)
 	{
