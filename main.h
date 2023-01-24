@@ -33,6 +33,7 @@ int print_lower_hexa(va_list ar_list);
 int print_upper_hexa(va_list ar_list);
 char *convert(long int num, int base);
 int print(char *str);
+char *convert_base(unsigned long nb, unsigned int base, int upper);
 char *convert_base_pointer(unsigned long p);
 int _puts(char *str, int ascii);
 int print_pointer(va_list ar_list);
